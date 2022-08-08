@@ -5,7 +5,7 @@
 
 # Prepare VHD for Windows Azure VM
 
-Set Windows configurations for Azure to prepare a Windows VHD from on-prem to create Azure Windows VM using Sysprep.
+Set Windows configurations for Azure to prepare a Windows VHD from on-prem to create Azure Windows VM.
 
 This project is intend to help Cloud Admins and anyone that might need an easy and fast way to prepare a VHD to create a Windows Azure VM.
 
