@@ -13,7 +13,8 @@ The instructions in this article apply to:
 The 64-bit version of Windows Server 2008 R2 and later Windows Server operating systems. For information about running a 32-bit operating system in Azure, https://docs.microsoft.com/en-US/troubleshoot/azure/virtual-machines/support-32-bit-operating-systems-virtual-machines 
 If any Disaster Recovery tool will be used to migrate the workload, like Azure Site Recovery or Azure Migrate, this process is still required on the Guest OS to prepare the image before the migration.
 .NOTES
-Version: 2.0
+The script is provided 'as is' and without warranty of any kind. 
+Version: 2.0 - Minor changes.
 Version log changes: 1.7 - First variant of script, setting up variables and functions
                            - PowerShell Module development
                            - Creating the Module manifest
@@ -158,7 +159,7 @@ Write-Host ($writeEmptyLine + "NLA value set to 1" + $writeSeperatorSpaces + $cu
 -foregroundcolor $foregroundColor2 $writeEmptyLine 
 Export-ModuleMember -Function NLA
 
-#Configure keep-alive value
+#Set the keep-alive value
 function KeepAlive () {
     Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services' -Name KeepAliveEnable -Value 1  -Type DWord -Force
     Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services' -Name KeepAliveInterval -Value 1  -Type DWord -Force
@@ -168,7 +169,7 @@ Write-Host ($writeEmptyLine + "Configure keep-alive value - Done." + $writeSeper
 -foregroundcolor $foregroundColor2 $writeEmptyLine 
 Export-ModuleMember -Function KeepAlive
 
-#Set reconnect options
+#Set the reconnect options
 function Reconnect () {
     Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services' -Name fDisableAutoReconnect -Value 0 -Type DWord -Force
     Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\Winstations\RDP-Tcp' -Name fInheritReconnectSame -Value 1 -Type DWord -Force
