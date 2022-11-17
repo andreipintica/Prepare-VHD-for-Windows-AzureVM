@@ -36,7 +36,7 @@ Copy the folder to C:\localuser\documents\PowerShell\Modules
 
 ``Import-Module -Name c:\temp\Prepare-VHD-for-Windows-AzureVM -Verbose`` 
 
-**Note:** Using the Verbose parameter causes Import-Module to report progress as it loads the module. Without the Verbose, PassThru, or AsCustomObject parameter, Import-Module does not generate any output when it imports a module.
+**Note:** Using the Verbose parameter causes Import-Module to report progress as it loads the module. Without the Verbose, PassThru, or AsCustomObject parameter, Import-Module does not generate any output when it imports a module. The script is provided 'as is' and without warranty of any kind. 
 
 # PowerShell module functions explained
 
@@ -91,12 +91,9 @@ Make sure you know the Directory Services Restore Mode (DSRM) password in case y
 <br/>
 
 
-🔧 Technologies & Tools
+## 🔧 Technologies & Tools
  
 ![](https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=Microsoft&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Code-VisualStudioCode-informational?style=flat&logo=VisualStudioCode&logoColor=white&color=2bbc8a)  ![](https://img.shields.io/badge/Code-PowerShell-informational?style=flat&logo=PowerShell&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Cloud-MicrosoftAzure-informational?style=flat&logo=MicrosoftAzure&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/platform-windows%20%-lightgrey)
-
-The script is provided 'as is' and without warranty of any kind. 
-
 
 ## Author
 
