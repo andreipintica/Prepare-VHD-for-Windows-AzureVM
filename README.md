@@ -9,7 +9,7 @@ Set Windows configurations for Azure to prepare a Windows VHD from on-prem to cr
 
 # Description 
 
-Before you upload a Windows virtual machine (VM) from on-premises to Azure, you must prepare the virtual hard disk (VHD or VHDX). Azure supports both generation 1 and generation 2 VMs that are in VHD file format and that have a fixed-size disk. The script must run before you are going to start the Sysprep. The maximum size allowed for the OS VHD on a generation 1 VM is 2 TB.
+Before you upload a Windows virtual machine (VM) from on-premises to Azure, you must prepare the virtual hard disk (VHD or VHDX). Azure supports both generation 1 and generation 2 VMs that are in VHD file format and that have a fixed-size disk. The script must run before you are going to start. The maximum size allowed for the OS VHD on a generation 1 VM is 2 TB.
 
 You can convert a VHDX file to VHD, convert a dynamically expanding disk to a fixed-size disk, but you can't change a VM's generation. For more information, see https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/Should-I-create-a-generation-1-or-2-virtual-machine-in-Hyper-V and https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2
 
